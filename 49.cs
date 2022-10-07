@@ -46,3 +46,30 @@ namespace CSharpFundamentals
         }
     }
 }
+
+
+// 3- Write a program and ask the user to enter the width and height of an image. Then tell if the image is landscape or portrait.
+namespace CSharpFundamentals
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Give me the width and height of an image, and I'll tell you if it's landscape or portrait!");
+            Console.WriteLine("Width:");
+            var w = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Height:");
+            var h = Convert.ToInt32(Console.ReadLine());
+
+            if (w > h)
+            {
+                Console.WriteLine("Landscape");
+            } else if (h > w) {
+                Console.WriteLine("Portrait");
+            } else {
+                Console.WriteLine("It's a square!");
+            }
+            Console.ReadLine();
+        }
+    }
+}
