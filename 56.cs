@@ -109,8 +109,8 @@ static void Main(string[] args)
 			}
 
 			numList.Sort();
-
 			Console.WriteLine("{0} {1} {2}", numList[0], numList[1], numList[2]);
+			break;
 		}
 	}
 }
